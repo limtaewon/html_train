@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    select,textarea{
+        width:200px;
+        padding:8px,5px;
+        border-radius: 6px;
+    }
+
+</style>
+<body>
+    <h1> 광주 인공지능 사관학교</h1>
+    <h2> 로그인 </h2>
+    <form action="https://server.ai-school.com" method="POST">
+        <h3>아이디를 입력하세요</h3>
+        <label for="id" >ID : </label>
+        <input 
+        id="id" 
+        type="text" 
+        name="id" 
+        placeholder="enter your ID"/>
+        <h3>비밀번호를 입력하세요</h3>
+        <label for="pw" >PASSWORD : </label>
+        <input 
+        id="pw" 
+        type="password" 
+        name="pw" 
+        placeholder="Please enter your password."/>
+        <h3>Select your Question</h3>
+        
+        <select name="비밀번호 힌트">
+            <option value="취미">취미는?</option>
+            <option value="색깔">좋아하는 색깔은?</option>
+            <option value="동물">좋아하는 동물은?</option>
+            <option value="고향">고향은?</option>
+            <option value="출신초등학교">어렸을때 다는 초등학교는?</option>
+        </select>
+        <h3>Enter your Answer</h3>
+        <label for="Question">Answer</label>
+        <input 
+        type="text" 
+        placeholder="Please write your answer">
+        <h3>자기소개</h3>
+        <textarea name='content' cols='20' rows='10'>
+
+        <button name='등록' type = 'submit'>등록하기</button>
+    </form>
+</body>
+</html>
